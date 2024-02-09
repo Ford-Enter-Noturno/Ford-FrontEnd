@@ -1,0 +1,29 @@
+header{
+    height: 120px;
+    width: 100%;
+    background-color: aquamarine;
+    /* Deixar os itens (Filhos) flexiveis */
+    display: flex;
+    /* aplicando uma direção horizontal */
+    justify-content: space-between;
+    /* aplicando uma direção vertical */
+    align-items: center;
+}
+
+nav{
+    background-color: bisque;
+    width: 500px;
+}
+
+section{
+    background-color: burlywood;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
