@@ -10,13 +10,16 @@ header{
     align-items: center;
 }
 
+img {
+    height: 50px;
+    width: 150px;
+}
+
 nav{
-    background-color: bisque;
     width: 500px;
 }
 
 section{
-    background-color: burlywood;
     width: 300px;
     display: flex;
     justify-content: space-between;
@@ -26,4 +29,43 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+button{
+    height: 40px;
+    width: 120px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.card-section{
+    width: 60%;
+}
+
+#image1{
+    height: 250px;
+    width: 250px;
+}
+
+#image2{
+    height: 250px;
+    width: 250px;
+}
+
