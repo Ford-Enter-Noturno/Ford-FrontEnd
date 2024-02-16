@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
     margin: 0;
@@ -10,7 +10,8 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
-    background-color: #F6F8FF;
+    background-color: var(--backgroundColor);
+    transition: all .2s;
 }
 
 .toggle {
@@ -18,14 +19,27 @@ body {
 }
 
 :root {
-    --iconColor: #697C9A;
-    --buttonColor: #0079FF;
-    --boxColor: #F6F8FF;
-    --titleColor: #4B6A9B;
+    --iconColor: #697c9a;
+    --buttonColor: #0079ff;
+    --boxColor: #f6f8ff;
+    --titleColor: #4b6a9b;
     --titleFirstColor: #222731;
-    --titleBoxColor: #2B3442;
-    --backgroundColor: #141D2F;
+    --titleBoxColor: #2b3442;
+    --backgroundColor: #141d2f;
     --fontFamily: "Space Mono", monospace;
+}
+
+.theme-light {
+    --backgroundColor: #f6f8ff;
+    --color-secondary: #fbfbfe;
+    --color-accent: #fd6f53;
+    --font-color: #000000;
+}
+.theme-dark {
+    --backgroundColor: #141d2f;
+    --textIconColor: #ffffff;
+    --searchColor: #1E2A47;
+    --boxColor: #141D2F;
 }
 
 .container {
@@ -46,7 +60,17 @@ body {
 
 .title-Aplication:first-child {
     font-family: var(--fontFamily);
+    color: var(--textIconColor);
     font-weight: bold;
+}
+
+.title-Aplication > i {
+    transition: 0.2s;
+}
+
+.title-Aplication > i:hover {
+    cursor: pointer;
+    transform: scale(130%);
 }
 
 .searchByUser {
@@ -71,7 +95,7 @@ body {
     height: 4em;
     outline: none;
     border: none;
-    background-color: white;
+    background-color: var(--searchColor);
     border-radius: 15px;
     padding-left: 5em;
     font-size: 1.1rem;
@@ -80,7 +104,7 @@ body {
 }
 
 .searchByUser input::placeholder {
-    color: var(--titleColor);
+    color: var(--textIconColor);
     font-family: var(--fontFamily);
     font-size: 1.1rem;
 }
@@ -99,17 +123,24 @@ body {
     cursor: pointer;
     font-family: var(--fontFamily);
     top: 6.1em;
+    transition: 0.2s;
+}
+
+button[type="submit"]:hover {
+    transform: scale(110%);
 }
 
 /* Principal card */
 
 .container-flex {
-    background-color: white;
+    background-color: var(--searchColor);
     height: 28em;
     border-radius: 15px;
     box-shadow: 5px 8px 10px #465fbb32;
     display: grid;
     grid-template-columns: 250px 550px;
+
+    margin-top: 2em;
 }
 
 .container-flex__image {
@@ -126,16 +157,21 @@ body {
 .container-flex__infos {
     padding: 3em 1.6em;
     font-family: var(--fontFamily);
+    color: var(--textIconColor);
 }
 
 .container-flex__date {
-    color: var(--iconColor);
+    color: var(--textIconColor);
     position: relative;
     top: -9em;
     left: 20em;
 }
 
-.container-flex__infos-box{
+.container-flex__infos-user p:first-of-type {
+    color: var(--buttonColor);
+}
+
+.container-flex__infos-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
@@ -145,5 +181,25 @@ body {
     border-radius: 15px;
 
     padding: 1em;
-    padding-left: 3.2em;
+    text-align: center;
+}
+
+.container-flex__infos-box > div > p {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--fontFamily);
+}
+
+.container-flex__infos-user__refs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 85px;
+    width: 100%;
+    padding: 0.6em;
+    margin-top: 2em;
+}
+
+.container-flex__infos-user__refs > div[class] {
+    color: var(--textIconColor);
 }
