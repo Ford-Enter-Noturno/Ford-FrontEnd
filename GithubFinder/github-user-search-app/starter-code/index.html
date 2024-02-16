@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>GitHub user search app</title>
+
+  <!-- Link para icons externos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./scripts/script.js"></script>
+</head>
+
+<body class="">
+  <main>
+    <section class="container">
+      <div class="title-Aplication">
+        <!-- Primeira seção para o nome do projeto e alterar o tema -->
+        <h1>
+          Devfinder
+        </h1>
+        <i class="bi bi-moon-fill"></i>
+        <!-- <i class="bi bi-sun-fill"></i> -->
+      </div>
+      <article class="searchByUser">
+        <!-- Seção para realizar a busca do usuario. Input e botão -->
+        <i class="bi bi-search"></i>
+        <input type="text" name="search" id="searchUser" placeholder="Pesquise por usuário do GitHub">
+        <button type="submit">
+          Pesquisar
+        </button>
+      </article>
+      <section class="container-flex">
+        <!-- Seção para que vai receber os dados da API, informações do usuário, foto, etc -->
+        <div class="container-flex__image">
+          <!-- Imagem usuario -->
+          <img src="./images/Bitmap.png" alt="">
+        </div>
+        <div class="container-flex__infos">
+          <!-- essa seção vai ser resposável por receber os dados do usuário que está vindo da API -->
+          <div>
+            <h1>
+              Guilherme Amorim
+            </h1>
+            <p>
+              @G648
+            </p>
+            <br>
+            <p id="bio-user">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, cumque tempore nobis praesentium quod
+              ratione rerum non labore incidunt architecto?
+            </p>
+          </div>
+          <div class="container-flex__date">
+            <p>
+              Joined 25 Jan 2011
+            </p>
+          </div>
+
+          <article class="container-flex__infos-box">
+            <div>
+              <h4>
+                repos
+              </h4>
+            </div>
+            <div>
+              <h4>
+                Followers
+              </h4>
+            </div>
+            <div>
+              <h4>
+                Following
+              </h4>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+
+</html>
