@@ -83,8 +83,8 @@ input::placeholder {
 
 /* Estilização para remover os spin buttons (setinhas) dos input[type='number'] */
 input[type="number"] {
-    appearance: textfield;
     -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
