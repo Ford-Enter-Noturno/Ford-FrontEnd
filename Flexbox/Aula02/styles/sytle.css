@@ -1,0 +1,35 @@
+/* Seletor universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-grid {
+  max-width: 490px;
+  margin: 0 auto;
+}
+
+header {
+  background: linear-gradient(to right, #574AE8, #3EA1DB);
+  height: 120px;
+}
+
+.title-flex {
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+
+}
