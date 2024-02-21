@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
 /* Seletor universal */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
 }
+
+/* variáveis */
 
 .container-grid {
   max-width: 490px;
@@ -13,6 +18,7 @@
 header {
   background: linear-gradient(to right, #574AE8, #3EA1DB);
   height: 120px;
+
 }
 
 .title-flex {
@@ -22,14 +28,77 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  color: white;
+}
+
+.search-input{
+  position: relative;
+  top: 30px;
+  z-index: 1;
+  left: 10px;
 }
 
 input[type="text"] {
-  width: 100%;
+  width: 43%;
   height: 40px;
   border-radius: 8px;
   border: none;
   outline: none;
   margin-top: 20px;
+  background-color: #ffffff29;
+  backdrop-filter: blur(25px);
 
+  color: white;
+
+  position: absolute;
+  left: 29%;
+
+  padding-left: 28px;
+}
+
+input[type="text"]::placeholder{
+  color: white;
+}
+
+main{
+  background-color: #F3F5F7;
+    margin-top: -20px;
+}
+
+.card-style{
+  height: 140px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 6px 6px 10px #13131f37;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.icon-flex{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.icon-flex i:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.info-flex{
+  height: 80px;
+  padding-top: 90px;
+  overflow: hidden;
+  transition: .8s all ease-in-out;
+}
+
+.info-flex:hover{
+  padding-top: 0px;
+}
+
+.info-flex>h1{
+  margin-bottom: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
