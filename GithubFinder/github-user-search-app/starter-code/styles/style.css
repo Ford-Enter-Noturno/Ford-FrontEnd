@@ -14,6 +14,14 @@ body {
     transition: all .2s;
 }
 
+.invalid-message{
+    color: red;
+    font-family: var(--fontFamily);
+    position: absolute;
+    right: 10em;
+    top: 5.8em;
+}
+
 .toggle {
     background-color: var(--backgroundColor);
 }
@@ -34,6 +42,7 @@ body {
     --color-secondary: #fbfbfe;
     --color-accent: #fd6f53;
     --font-color: #000000;
+    --placeholder-color: #ffffff;
 }
 .theme-dark {
     --backgroundColor: #141d2f;
@@ -99,7 +108,7 @@ body {
     border-radius: 15px;
     padding-left: 5em;
     font-size: 1.1rem;
-    color: var(--titleColor);
+    color: var(--textIconColor);
     box-shadow: 5px 8px 10px #465fbb32;
 }
 
