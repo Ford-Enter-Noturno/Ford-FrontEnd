@@ -16,6 +16,7 @@
     src: url(../assets/fonts/static/Inter-Regular.ttf);
 }
 
+
 :root {
     --blue: #345FF6;
     --gunmetal: #253347;
@@ -31,7 +32,7 @@
 
 /* inicio da estilização */
 .banner-flex__title {
-    font-family: Inter-Semibold;
+    font-family: Inter-SemiBold;
     font-size: 3.8rem;
 }
 
@@ -162,18 +163,18 @@ input[type="radio"] {
 
 /* estilizando main */
 
-.mean-bmi{
+.mean-bmi {
     display: flex;
     align-items: center;
     gap: 150px;
 }
 
-.mean-bmi>img{
+.mean-bmi>img {
     width: 25em;
     height: 25em;
 }
 
-.mean-bmi__flex{
+.mean-bmi__flex {
     font-family: Inter-SemiBold;
     width: 460px;
     height: 300px;
@@ -183,33 +184,34 @@ input[type="radio"] {
     gap: 40px;
 }
 
-.mean-bmi__flex>h1{
+.mean-bmi__flex>h1 {
     font-size: 2.5rem;
     color: var(--gunmetal);
     margin-top: 90px;
 }
 
-.mean-bmi__flex>p{
+.mean-bmi__flex>p {
     font-size: .8rem;
     color: var(--darkEletricBlue);
     line-height: 1.4rem;
 }
 
-.cards-flex{
+.cards-flex {
     margin-top: 5%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr )); 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     background-image: linear-gradient(to bottom right, rgba(214, 252, 254, 0%), rgba(214, 230, 254, 0.431));
     padding: 60px 116.5px 60px 116.5px;
     border-radius: 0 20px 20px 0;
     gap: 50px;
 }
 
-.cards-flex__style img,h2{
+.cards-flex__style img,
+h2 {
     margin-bottom: 15px;
 }
 
-.cards-flex__style h2{
+.cards-flex__style h2 {
     font-family: Inter-SemiBold;
     font-size: 1.2rem;
     color: var(--gunmetal);
@@ -221,30 +223,90 @@ input[type="radio"] {
     color: var(--darkEletricBlue);
 }
 
+/* FOOTER */
+.grid-footer__style {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    height: 80vh;
+    margin-top: 5em;
+}
+
+.cards-style__footer {
+    width: 22em;
+    height: 11em;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 6px 15px 18px rgba(0, 0, 0, 0.187);
+}
+
+.card-info-style {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-info-style>h4 {
+    font-family: Inter-SemiBold;
+    color: var(--gunmetal);
+}
 
 
+.cards-style__footer>p {
+    font-family: Inter-Regular;
+    color: var(--darkEletricBlue);
+}
 
+.title {
+    width: 30em;
+    height: 10em;
+}
 
+.title>h1 {
+    font-family: Inter-SemiBold;
+    color: var(--gunmetal);
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
 
+.title>p {
+    font-family: Inter-Regular;
+    color: var(--darkEletricBlue);
+}
 
+.card01 {
+    margin-left: 20em;
+}
 
+.card02 {
+    height: 8em;
+}
 
+.double-cards__style {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 10em;
+    width: 46em;
+    top: 13em;
+    right: 11.9em;
+}
 
+.double-cards-2 {
+    top: 25em;
+    right: 40em;
+}
 
+.arrow-right {
+    position: absolute;
+    top: 95em;
+    left: 13em;
+}
 
+@media screen and (max-width: 376px) {
 
-
-
-
-
-
-
-
-
-
-/* @media screen and (max-width: 376px) {
     .banner-flex {
         width: 100vw;
+        height: 80vh;
     }
 
     .banner-flex>img {
@@ -258,6 +320,7 @@ input[type="radio"] {
         width: 90%;
         margin-right: 0;
         text-align: center;
+        gap: 20px;
     }
 
     .banner-flex__title {
@@ -270,9 +333,9 @@ input[type="radio"] {
 
     .form-position {
         position: absolute;
-        left: 10%;
-        top: 60%;
-        width: 80vw;
+        left: 5%;
+        top: 62%;
+        width: 90vw;
     }
 
     .form-position__infoStyle {
@@ -289,4 +352,69 @@ input[type="radio"] {
     .form-position__values-flex>p {
         left: 83.1%;
     }
-} */
+
+    .mean-bmi {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .mean-bmi>img {
+        width: 100%;
+        margin-top: 100%;
+    }
+
+    .mean-bmi__flex {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mean-bmi__flex>h1 {
+        font-size: 2rem;
+    }
+
+    .mean-bmi__flex>p {
+        font-size: 1rem;
+    }
+
+    .arrow-right {
+        display: none;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .cards-flex {
+        margin-top: 28%;
+        padding: 26px;
+    }
+
+    .card01 {
+        margin: 3%;
+    }
+
+    .grid-footer__style {
+        width: 100%;
+        display: block;
+    }
+
+    .double-cards__style {
+        display: block;
+        margin: 54%;
+        top: -34%;
+        width: 100%;
+    }
+
+    .double-cards-2 {
+        margin: 174%;
+        display: block;
+        top: -128%;
+        width: 100%;
+    }
+
+    .title {
+        padding: 10px;
+        margin: 10px;
+        margin-bottom: 10%;
+    }
+}
