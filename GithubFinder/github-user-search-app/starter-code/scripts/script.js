@@ -59,11 +59,10 @@ const findUser = document
 
       if (retorno.ok) {
         const data = await retorno.json();
-        
+
         const createdDate = new Date(data.created_at);
-        const formattedCreatedDate = `${createdDate.getDate()}/${
-          createdDate.getMonth() + 1
-        }/${createdDate.getFullYear()}`;
+        const formattedCreatedDate = `${createdDate.getDate()}/${createdDate.getMonth() + 1
+          }/${createdDate.getFullYear()}`;
 
         const retornoObj = {
           nome: data.name,
